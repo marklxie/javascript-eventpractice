@@ -1,6 +1,6 @@
 $(() =>{
 
-    styleChange();
+    //styleChange();
     $("#plus").click(() =>{
         let holdNum = $("#num").val();
         holdNum++;
@@ -17,7 +17,7 @@ $(() =>{
     $( "#num" ).change(function() {
         styleChange();
       });
-    function styleChange(){
+    const styleChange =() =>{
         let holdNum = $("#num").val();
         if(holdNum % 2 == 0){
             $("#num").css("color", "red");
